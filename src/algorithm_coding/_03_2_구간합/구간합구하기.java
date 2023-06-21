@@ -1,16 +1,12 @@
 package algorithm_coding._03_2_구간합;
 
-
 import java.util.Scanner;
-
-// 백준 11659
-// 실버3
 
 public class 구간합구하기 {
 
 	static int N, M;
-	static int[] A;
-	static int[] S;
+	static int I, J, ANS;
+	static int[] A, S;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -25,11 +21,13 @@ public class 구간합구하기 {
 		}
 		
 		for(int i=0; i<M; i++) {
-			int m = sc.nextInt();
-			int n = sc.nextInt();
-			
-			System.out.println(S[n] - S[m-1]);
+			I = sc.nextInt();
+			J = sc.nextInt();
+			ANS = S[J] - S[I-1];
+			System.out.println(ANS);
 		}
+		
+		
 	}
 
 }
