@@ -11,252 +11,143 @@ import java.util.StringTokenizer;
  * @author didgs
  *
  */
+
 public class 두개의사탕 {
-	
+
 	static int N, M;
 	static int COUNT = Integer.MAX_VALUE;
-	static int[] REDBALL;
-	static int[] BLUEBALL;
-	static int[] CANDIRED = new int[2];
-	static int[] CANDIBLUE = new int[2];
 	static int[] DX = {0, 1, 0, -1};
 	static int[] DY = {1, 0, -1, 0};
 	static String[][] MAP;
-	
+	static Candy RED, BLUE;
+
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
 		MAP = new String[N][M];
-
-		for(int i=0; i<N ;i++) {
+		
+		// 주어진 정보로 2차원 배열을 초기화
+		// 빨간사탕과 파란사탕의 좌표 초기화
+		for(int i=0; i<N; i++) {
 			st = new StringTokenizer(br.readLine());
 			String[] s = st.nextToken().split("");
 			for(int j=0; j<M; j++) {
 				MAP[i][j] = s[j];
 				if(MAP[i][j].equals("R"))
-					REDBALL = new int[] {i, j};
+					RED = new Candy(i, j);
 				if(MAP[i][j].equals("B"))
-					BLUEBALL = new int[] {i, j};
+					BLUE = new Candy(i, j);
 			}
 		}
-
 		
-		backtrack(0);
-
-		if(COUNT > 10)
+		dfs(0);
+		
+		if(COUNT>10)
 			COUNT = -1;
 		
 		System.out.println(COUNT);
 	}
 	
-	public static void backtrack(int count) {
-		
-		int[] nowRed = new int[] {REDBALL[0], REDBALL[1]};
-		int[] nowBlue = new int[] {BLUEBALL[0], BLUEBALL[1]};
-		
-		if(count > 10)
+	// 백트래킹
+	// 파란공이 구멍에 빠져있거나, 10회 이상 탐색할 경우 pruning 처리
+	// 파란공이 구멍에 빠지지 않은 채로 빨간공이 구멍에 빠지면 답을 찾은 것
+	public static void dfs(int count) {
+		if(isExit(BLUE))
 			return;
-		
-		if(isExit(nowBlue[0], nowBlue[1]))
-			return;
-		
-		if(isExit(nowRed[0], nowRed[1]) && count < COUNT) {
-			COUNT = count;
-			System.out.println("FOUND MIN! " + COUNT);
+		if(isExit(RED)) {
+			COUNT = Math.min(COUNT, count);
 			return;
 		}
+		if(count>=10)
+			return;
 		
 		for(int i=0; i<4; i++) {
+			Candy nowRed = new Candy(RED.x, RED.y);
+			Candy nowBlue = new Candy(BLUE.x, BLUE.y);
 			
-			if(i==0 || i==2) {
-				if(isSameRow(nowRed[0], nowBlue[0])) {
-					if((i==0 && nowRed[1]>nowBlue[1]) || (i==2 && nowRed[1]<nowBlue[1]))
-						redFirst(nowRed, nowBlue, i);
-					else
-						blueFirst(nowRed, nowBlue, i);
-				}else {
-					move(nowRed, nowBlue, i);
-				}
-			}
-			if(i==1 || i==3) {
-				if(isSameCol(nowRed[1], nowBlue[1])) {
-					if((i==1 && nowRed[0]>nowBlue[0]) || (i==3 && nowRed[0]<nowRed[1]))
-						redFirst(nowRed, nowBlue, i);
-					else
-						blueFirst(nowRed, nowBlue, i);
-				}else {
-					move(nowRed, nowBlue, i);
-				}
-			}
+			move(i);
+			dfs(count+1);
 			
-			if(ballMoved(REDBALL, BLUEBALL, CANDIRED, CANDIBLUE)) {
-				count += 1;
-				REDBALL = new int[] {CANDIRED[0], CANDIRED[1]};
-				BLUEBALL = new int[] {CANDIBLUE[0], CANDIBLUE[1]};
-				if(count<10)
-				System.out.println("RED: " + REDBALL[0] + ", " + REDBALL[1] + ", BLUE: " + BLUEBALL[0] + ", " + BLUEBALL[1] +", COUNT: " + count + ", DIR: " + i);
-				
-				backtrack(count);
-				
-				count -= 1;
-				REDBALL = new int[] {nowRed[0], nowRed[1]};
-				BLUEBALL = new int[] {nowBlue[0], nowBlue[1]};
+			RED = new Candy(nowRed.x, nowRed.y);
+			BLUE = new Candy(nowBlue.x, nowBlue.y);
+		}
+	}
+
+	// MAP 을 한 방향에 대해 완전히 기울이는 동작
+	public static void move(int dir) {
+		if(redFirst(dir)) {
+			toEnd(RED, dir);
+			toEnd(BLUE, dir);
+		}else {
+			toEnd(BLUE,dir);
+			toEnd(RED, dir);
+		}
+	}
+	
+	// 주어진 방향으로 사탕을 끝까지 굴리는 동작
+	public static void toEnd(Candy candy, int dir) {
+		while(true) {
+			int nx = candy.x + DX[dir];
+			int ny = candy.y + DY[dir];
+			if(isCandy(nx, ny))
+				break;
+			if(!isWall(nx, ny)) {
+				candy.x = nx;
+				candy.y = ny;
 			}
-		}
-	}
-	
-	public static void redFirst(int[] red, int[] blue, int dir) {
-		
-		CANDIRED[0] = red[0];
-		CANDIRED[1] = red[1];
-		CANDIBLUE[0] = blue[0];
-		CANDIBLUE[1] = blue[1];
-		// 빨간공 끝까지
-		while(true) {
-			int nrx = CANDIRED[0] + DX[dir];
-			int nry = CANDIRED[1] + DY[dir];
-			if(!isBlocked(nrx, nry)) {
-				CANDIRED[0] = nrx;
-				CANDIRED[1] = nry;
-				
-				if(isExit(nrx, nry))
-					break;
-			}else
-				break;
-		}
-		// 파란공 끝까지
-		while(true) {
-			int nbx = CANDIBLUE[0] + DX[dir];
-			int nby = CANDIBLUE[1] + DY[dir];
-			if(!isBlocked(nbx, nby)) {
-				if(isCandy(nbx, nby) && !isExit(CANDIRED[0], CANDIRED[1]))
-					break;
-				CANDIBLUE[0] = nbx;
-				CANDIBLUE[1] = nby;
-				
-				if(isExit(nbx, nby))
-					break;
-			}else
+			if(isExit(candy) || isWall(nx, ny)) 
 				break;
 		}
 	}
 	
-	public static void blueFirst(int[] red, int[] blue, int dir) {
-		
-		CANDIRED[0] = red[0];
-		CANDIRED[1] = red[1];
-		CANDIBLUE[0] = blue[0];
-		CANDIBLUE[1] = blue[1];
-		// 파란공 끝까지
-		while(true) {
-			int nbx = CANDIBLUE[0] + DX[dir];
-			int nby = CANDIBLUE[1] + DY[dir];
-			if(!isBlocked(nbx, nby)) {
-				CANDIBLUE[0] = nbx;
-				CANDIBLUE[1] = nby;
-				
-				if(isExit(nbx, nby))
-					break;
-			}else
-				break;
-		}
-		// 빨간공 끝까지
-		while(true) {
-			int nrx = CANDIRED[0] + DX[dir];
-			int nry = CANDIRED[1] + DY[dir];
-			if(!isBlocked(nrx, nry)) {
-				if(isCandy(nrx, nry) && !isExit(CANDIBLUE[0], CANDIBLUE[1]))
-					break;
-				
-				CANDIRED[0] = nrx;
-				CANDIRED[1] = nry;
-				
-				if(isExit(nrx, nry))
-					break;
-			}else
-				break;
-		}
+	// 기울일 때 빨간색 공이 반드시 먼저 움직여야할 때를 처리
+	public static boolean redFirst(int dir) {
+		if(dir==0) 
+			return (RED.x==BLUE.x && RED.y>BLUE.y);
+		else if(dir==1) 
+			return (RED.y==BLUE.y && RED.x>BLUE.x);
+		else if(dir==2) 
+			return (RED.x==BLUE.x && RED.y<BLUE.y);
+		else 
+			return (RED.y==BLUE.y && RED.x<BLUE.x);
 	}
 	
-	public static void move(int[] red, int[] blue, int dir) {
-		
-		CANDIRED[0] = red[0];
-		CANDIRED[1] = red[1];
-		CANDIBLUE[0] = blue[0];
-		CANDIBLUE[1] = blue[1];
-		// 빨간공 끝까지
-		while(true) {
-			int nrx = CANDIRED[0] + DX[dir];
-			int nry = CANDIRED[1] + DY[dir];
-			if(!isBlocked(nrx, nry)) {
-				CANDIRED[0] = nrx;
-				CANDIRED[1] = nry;
-				
-				if(isExit(nrx, nry))
-					break;
-			}else
-				break;
-		}
-		//파란공 끝까지
-		while(true) {
-			int nbx = CANDIBLUE[0] + DX[dir];
-			int nby = CANDIBLUE[1] + DY[dir];
-			if(!isBlocked(nbx, nby)) {
-				CANDIBLUE[0] = nbx;
-				CANDIBLUE[1] = nby;
-				
-				if(isExit(nbx, nby)) 
-					break;				
-			}else
-				break;
-		}
+	// 사탕이 구멍에 빠져있는지 확인하는 함수
+	public static boolean isExit(Candy candy) {
+		if(MAP[candy.x][candy.y].equals("O"))
+			return true;
+		return false;
 	}
 	
-	public static boolean isBlocked(int x, int y) {
-		
+	// 이동하려는 칸에 사탕이 있는지 확인하는 함수
+	public static boolean isCandy(int x, int y) {
+		if(x==BLUE.x && y==BLUE.y && !MAP[x][y].equals("O")) // ************************************* 틀린이유: 사탕이 구멍에 빠지고 났을때, 그 칸에 사탕이 겹치지 않는 처리를 하지 않았었다.
+			return true;
+		if(x==RED.x && y==RED.y && !MAP[x][y].equals("O"))
+			return true;
+		return false;
+	}
+	
+	// 이동하려는 칸이 벽이거나 MAP 밖인지 확인하는 함수
+	public static boolean isWall(int x, int y) {
 		if(x<0 || x>=N || y<0 || y>=M)
 			return true;
 		if(MAP[x][y].equals("#"))
 			return true;
 		return false;
 	}
-	
-	public static boolean isCandy(int x, int y) {
-		
-		if((CANDIRED[0]==x && CANDIRED[1]==y) || (CANDIBLUE[0]==x && CANDIBLUE[1]==y))
-			return true;
-		return false;
-	}
-	
-	public static boolean isExit(int x, int y) {
-		
-		if(MAP[x][y].equals("O"))
-			return true;
-		return false;
-	}
-	
-	public static boolean isSameRow(int rx, int bx) {
-		
-		if(rx == bx)
-			return true;
-		return false;
-	}
-	
-	public static boolean isSameCol(int ry, int by) {
-		
-		if(ry == by)
-			return true;
-		return false;
-	}
-	
-	public static boolean ballMoved(int[] red, int[] blue, int[] candiRed, int[] candiBlue) {
-		
-		if(red[0]==candiRed[0] && red[1]==candiRed[1] && blue[0]==candiBlue[0] && blue[1]==candiBlue[1])
-			return false;
-		return true;
-	}
 }
+
+class Candy{
+	
+	public Candy(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	int x;
+	int y;
+}
+
