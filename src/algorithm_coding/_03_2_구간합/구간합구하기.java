@@ -2,6 +2,12 @@ package algorithm_coding._03_2_구간합;
 
 import java.util.Scanner;
 
+/**
+ * 실버 3
+ * 백준 11659
+ * @author didgs
+ *
+ */
 public class 구간합구하기 {
 
 	static int N, M;
