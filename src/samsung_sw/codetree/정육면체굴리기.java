@@ -39,6 +39,14 @@ public class 정육면체굴리기 {
 		for(int i=0; i<K; i++)
 			DIR[i] = sc.nextInt();
 		
+		/**
+		 * 순서대로 주어진 방향에 따라 동작을 취한다.
+		 * (구분동작)
+		 * 1. 주어진 방향으로 칸을 이동했을 때 격자판 내에 위치한지 확인하고
+		 * 2. 주어진 방향으로 주사위를 굴린다.
+		 * 3. 굴린뒤에 주사위 바닥면과 칸의 숫자를 조건에 맞게 복사하는 과정을 취한다.
+		 * 4. 주사위 윗면의 숫자를 출력한다.
+		 */
 		for(int dir : DIR) {
 			int nx = CORD[0] + DX[dir];
 			int ny = CORD[1] + DY[dir];
@@ -55,6 +63,10 @@ public class 정육면체굴리기 {
 		}
 	}
 	
+	/**
+	 * 방향에 맞게 주사위를 굴린다.
+	 * @param dir
+	 */
 	public static void roleDice(int dir) {
 		if(dir == 1)
 			dice.moveEast();
@@ -66,6 +78,9 @@ public class 정육면체굴리기 {
 			dice.moveSouth();
 	}
 	
+	/**
+	 * 조건에 맞게 주사위 바닥면과 칸의 숫자를 복사한다.
+	 */
 	public static void copyNum() {
 		if(MAP[CORD[0]][CORD[1]] == 0)
 			MAP[CORD[0]][CORD[1]] = dice.getFloor();
@@ -75,16 +90,32 @@ public class 정육면체굴리기 {
 		}
 	}
 	
+	/**
+	 * 주사위 상단면의 숫자를 출력한다.
+	 */
 	public static void printTopNum() {
 		System.out.println(dice.getTop());
 	}
 	
+	/**
+	 * 이동하려는 칸이 격자판 내에 위치한지 확인한다.
+	 * @param x
+	 * @param y
+	 * @return
+	 */
 	public static boolean canGo(int x, int y) {
 		return (x>=0 && x<N && y>=0 && y<M);
 	}
 
 }
 
+/**
+ * 2차원 배열로 주사위 전개도를 표현한다.
+ * [0][1], [1][0], [1][1], [1][2], [2][1], [3][1] 인덱스만 사용하여 전개도를 표시한다.
+ * 동 서 남 북으로 굴렸을 시 전개도에 맞게 인덱스를 교체해주어 상태를 최신화한다.
+ * @author didgs
+ *
+ */
 class Dice{
 	
 	int[][] map = new int[4][3];
