@@ -1,8 +1,8 @@
-package codetree;
+package baekjoon;
 
 import java.util.Scanner;
 
-public class 테트리스블럭안의합최대화 {
+public class 테트로도미노 {
 	
 	static int N, M, ANS;
 	static int[][] MAP;
