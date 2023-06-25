@@ -2,6 +2,12 @@ package baekjoon;
 
 import java.util.Scanner;
 
+/**
+ * 삼성 SW 역량 테스트 기출 문제
+ * 골드 2
+ * @author didgs
+ *
+ */
 public class 청소년상어 {
 
 	static int[][] map = new int[4][4];
