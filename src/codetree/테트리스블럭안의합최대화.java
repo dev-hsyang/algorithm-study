@@ -2,6 +2,12 @@ package codetree;
 
 import java.util.Scanner;
 
+/**
+ * 골드 4
+ * 삼성 SW 역량테스트 2017 상반기 오전 1번 문제
+ * @author didgs
+ *
+ */
 public class 테트리스블럭안의합최대화 {
 	
 	static int N, M, ANS;
@@ -26,11 +32,15 @@ public class 테트리스블럭안의합최대화 {
 		System.out.println(ANS);
 	}
 	
+	/**
+	 * 일자형 블럭은 두가지 경우만 고려하면 되는 단순한 케이스이다.
+	 * 
+	 */
 	public static void doFilter1() {
 		int sum = 0;
 		for(int i=0; i<N; i++)
 			for(int j=0; j<M; j++) {
-				if(j+4 <= M) 
+				if(j+4 <= M) // 등호 <, <= 를 잘 따져봐야 한다. 
 					sum = MAP[i][j] + MAP[i][j+1] + MAP[i][j+2] + MAP[i][j+3];
 				if(sum > ANS)
 					ANS = sum;
@@ -44,6 +54,11 @@ public class 테트리스블럭안의합최대화 {
 			}
 	}
 	
+	/**
+	 * 각 filter 클래스 인스턴스를 선언해주고
+	 * filter 생성 후 filtering
+	 * 회전 / 뒤집기한 상태가 있을 경우 동작을 취한 후 다시 filtering 한다.
+	 */
 	public static void doFilter2() {
 		Filter2 filter2 = new Filter2();
 		filter2.init();
@@ -95,17 +110,25 @@ public class 테트리스블럭안의합최대화 {
 		filtering(filter5.getFilter());
 	}
 	
+	/**
+	 * 주어진 블럭과 MAP 을 겹쳐가며 블럭이 놓인 칸 안에 적힌 숫자의 합을 구하고
+	 * 전역변수의 최대값과 비교하여 합이 더 크면 ANS 최신화 (0)
+	 * MAP 의 한 인덱스를 기준으로, filter 의 크기를 덧댈 수 있는지 확인하고 (1)
+	 * filter 의 크기만큼 MAP 을 탐색하며 (2)
+	 * filter 에서 1인 부분과 일치하는 MAP 의 숫자를 합해간다 (3)
+	 * @param filter
+	 */
 	public static void filtering(int[][] filter) {
 		int sum;
 		for(int i=0; i<N; i++)
 			for(int j=0; j<M; j++) {
-				if(i+filter.length <= N && j+filter[0].length <= M) {
+				if(i+filter.length <= N && j+filter[0].length <= M) { // (1)
 					sum = 0;
-					for(int m=0; m<filter.length; m++)
+					for(int m=0; m<filter.length; m++) // (2)
 						for(int n=0; n<filter[0].length; n++)
-							if(filter[m][n] == 1)
+							if(filter[m][n] == 1) // (3)
 								sum += MAP[i+m][j+n];
-					if(sum > ANS)
+					if(sum > ANS) // (0)
 						ANS = sum;
 				}
 			}
@@ -165,7 +188,6 @@ class Filter3{
 	public int[][] getFilter(){
 		return filter;
 	}
-	
 }
 
 class Filter4{
