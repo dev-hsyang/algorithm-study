@@ -6,6 +6,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
+ * 백준 14502
  * 삼성 SW 역량 테스트 기출 문제
  * 골드 4
  */

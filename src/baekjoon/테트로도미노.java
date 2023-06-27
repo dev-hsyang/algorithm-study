@@ -2,6 +2,11 @@ package baekjoon;
 
 import java.util.Scanner;
 
+/**
+ * 백준 14500
+ * 삼성 SW 역량 테스트 기출 문제
+ * 골드 4
+ */
 public class 테트로도미노 {
 	
 	static int N, M, ANS;

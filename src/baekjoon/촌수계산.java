@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * 백준 2644
+ * DFS BFS 필수문제
  * 실버 2
  */
 public class 촌수계산 {

@@ -6,6 +6,8 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
+ * 백준 2606
+ * DFS BFS 필수문제
  * 실버 3
  * @author didgs
  *

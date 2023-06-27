@@ -3,6 +3,7 @@ package baekjoon;
 import java.util.Scanner;
 
 /**
+ * 백준 14499
  * 삼성 SW 역량 테스트 기출 문제
  * 골드 4
  * @author didgs

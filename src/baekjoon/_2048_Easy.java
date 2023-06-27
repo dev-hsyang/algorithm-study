@@ -3,6 +3,7 @@ package baekjoon;
 import java.util.Scanner;
 
 /**
+ * 백준 12100
  * 삼성 SW 역량 테스트 기출 문제
  * 골드 2
  * @author didgs
