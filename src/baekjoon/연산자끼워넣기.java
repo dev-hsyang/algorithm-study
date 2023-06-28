@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * 백준 14888
+ * 삼성 SW 역량 테스트 기출 문제
  * 실버 1
- * 삼성 SW 역량테스트 2017 하반기 오후 2번 문제
  * @author didgs
  *
  */
