@@ -1,0 +1,20 @@
+
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(”…şéşÿÿÿÿ8®ã«Ÿ1
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¨úÄçıÿÿÿÿ
+g
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ï¹Åüÿÿÿÿ
+8
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ8È»¯Ÿ1
+8
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ8È»¯Ÿ1
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8éĞ… 1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ8Ãã«Ÿ1
+T	java:S106/"9Replace this use of System.out or System.err by a logger.(¸ØïU8€ıŸ1
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(ŞñÂÏ8Œñ– 1
+P
+java:S1128"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8ïĞ… 1
+S
+java:S1128"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ8ïĞ… 1
+X
+java:S1128"6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ8ïĞ… 1
