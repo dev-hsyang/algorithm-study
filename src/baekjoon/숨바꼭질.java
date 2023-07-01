@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * 실버 1
+ * DFS BFS 필수문제
  * 백준 1697
  */
 public class 숨바꼭질 {

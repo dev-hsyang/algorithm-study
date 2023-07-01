@@ -46,8 +46,6 @@ J
 M
 codetree/두개의사탕.java,c/f/cffb1638bac88db10aabf69d11f0db1dd374886a
 J
-baekjoon/촌수계산.java,e/7/e7102a85d09561c3dfaa8f0c67b5f835a64b09d9
-J
 codetree/나무박멸.java,1/8/189deb71db315865e11774ac98e22abb8badb6d2
 P
  codetree/바이러스검사.java,1/9/1928c787fa50b8dbf7a5dfc9f28ca8b788688250
