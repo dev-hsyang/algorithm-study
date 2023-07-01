@@ -1,0 +1,19 @@
+
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(èš‹ƒ
+b
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
+b
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
+d
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
+c
+java:S3008"MRename this field "DX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…à²
+c
+java:S3008"MRename this field "DY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çèåÆ
+d
+java:S3008"NRename this field "MAP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å³ª»
+h
+java:S3008"RRename this field "VISITED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÎ²Ğ
+T
+java:S1659">Declare "M" and all following declarations on a separate line.(òéÃã
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(öë¤
