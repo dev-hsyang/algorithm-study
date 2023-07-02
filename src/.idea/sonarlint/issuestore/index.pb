@@ -17,8 +17,6 @@ D
 baekjoon/집합.java,d/6/d6bedd92b44924d3c4ad8c1f9e3588f456bcf6aa
 M
 baekjoon/청소년상어.java,0/5/0577df138d30a9166d5d93224a7d2a2647f516d3
-P
- baekjoon/테트로도미노.java,2/2/2261b1f0e00ad65f3bbca81bb97be33a873af029
 M
 baekjoon/로봇청소기.java,2/5/257901e7d7229b934ddeb2febf33132c95b2d6ba
 S
@@ -33,8 +31,6 @@ S
 #baekjoon/연산자끼워넣기.java,1/7/1785adc9f8a5d2fe2197d7ab171440ea5de67fdb
 J
 codetree/조삼모사.java,4/1/41291a0ee993260f734beeb94701832a2360e797
-S
-#codetree/연산자배치하기.java,e/7/e7b1f689ae3edf9d91f766f57c26831bce386ffb
 G
 baekjoon/토마토.java,2/3/2318f8f1c088dfbb1dfee977bbd9c8a95086724b
 J
