@@ -3,8 +3,6 @@ S
 #codetree/정육면체굴리기.java,8/a/8a557fe393c09a3f4725717bc78e314da8776de7
 S
 #codetree/방화벽설치하기.java,0/0/00bd91773244d5bc7ef041edcd84cab89ce42d5d
-H
-baekjoon/_2048_Easy.java,b/3/b3dcfe5466309cafad869c41c3b1ca4e914a4770
 P
  baekjoon/미세먼지안녕.java,d/2/d203b4d7a45ed22888d53fb5a0a24905aed77e50
 K
