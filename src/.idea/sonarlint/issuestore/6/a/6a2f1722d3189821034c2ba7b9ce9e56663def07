@@ -1,0 +1,25 @@
+
+h
+java:S1104	"MMake N a static final constant or non-public and provide accessors if needed.(ÜßŞÒûÿÿÿÿ
+g
+java:S1104
+"QMake PRIME a static final constant or non-public and provide accessors if needed.(Ìñ×¶
+B
+java:S1444	"'Make this "public static N" field final(ÜßŞÒûÿÿÿÿ
+A
+java:S1444
+"+Make this "public static PRIME" field final(Ìñ×¶
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ñ·ªó
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ßÏ¸
+g
+java:S3008	"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜßŞÒûÿÿÿÿ
+f
+java:S3008
+"PRename this field "PRIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìñ×¶
+3
+java:S2386
+"Make this member "protected".(Ìñ×¶
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÁ½
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡¯±’ùÿÿÿÿ

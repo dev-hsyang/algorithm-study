@@ -1,0 +1,26 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£Á±à
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø¹ûışÿÿÿÿ
+b
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ ¬ï
+b
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ ¬ï
+g
+java:S3008"LRename this field "I" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç˜Õüÿÿÿÿ
+g
+java:S3008"LRename this field "J" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç˜Õüÿÿÿÿ
+i
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç˜Õüÿÿÿÿ
+g
+java:S3008"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è®ÇÍûÿÿÿÿ
+g
+java:S3008"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è®ÇÍûÿÿÿÿ
+5
+java:S1659"Declare "M" on a separate line.(ğ ¬ï
+Y
+java:S1659">Declare "J" and all following declarations on a separate line.(Ç˜Õüÿÿÿÿ
+:
+java:S1659"Declare "S" on a separate line.(è®ÇÍûÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(öë¤

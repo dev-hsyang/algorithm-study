@@ -1,0 +1,28 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Àïƒ‹
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø¹ûışÿÿÿÿ
+i
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+i
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+j
+java:S3008"MRename this field "X1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+j
+java:S3008"MRename this field "X2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+j
+java:S3008"MRename this field "Y1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+j
+java:S3008"MRename this field "Y2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+k
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÿä8ìîÃ1
+n
+java:S3008"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÂäúÿÿÿÿ8ìîÃ1
+n
+java:S3008"LRename this field "D" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÂäúÿÿÿÿ8ìîÃ1
+[
+java:S1659">Declare "M" and all following declarations on a separate line.(¨ÿä8ìîÃ1
+A
+java:S1659"Declare "D" on a separate line.(ÃÂäúÿÿÿÿ8ìîÃ1
+T
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‘ìîÃ1
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(öë¤8”ìîÃ1
