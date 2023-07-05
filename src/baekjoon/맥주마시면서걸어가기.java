@@ -17,6 +17,12 @@ public class 맥주마시면서걸어가기 {
     static boolean[] VISITED;
     static ArrayList<Node>[] ADJ;
 
+    /**
+     * 핵심아이디어
+     * (1) 주어진 좌표들을 node 화하고
+     * (2) 맥주가 최대일때 도달할 수 있는 node 끼리는 link 하여 인접리스트를 완성한다.
+     * (3) 완성된 그래프를 탐색하며 ** 50m 당 맥주 한병을 소모하고, 맥주를 다 마셔도 갈 수 없는 node 에 대한 조건을 처리한다.
+     */
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         T = sc.nextInt();
@@ -30,6 +36,7 @@ public class 맥주마시면서걸어가기 {
             for(int i=0; i<N+2; i++)
                 ADJ[i] = new ArrayList<Node>();
 
+            // (1)
             for(int i=0; i<N+2; i++)
                 ADJ[i].add(new Node(sc.nextInt(), sc.nextInt(), i));
 
@@ -41,6 +48,7 @@ public class 맥주마시면서걸어가기 {
         }
     }
 
+    // (2)
     public static void updateAdjList(){
         for(int i=0; i<N+2; i++){
             for(int j=i+1; j<N+2; j++){
@@ -54,6 +62,7 @@ public class 맥주마시면서걸어가기 {
         }
     }
 
+    // (3)
     public static void operate(Node start){
         Queue<Node> queue = new LinkedList<Node>();
         start.beer = 20;
