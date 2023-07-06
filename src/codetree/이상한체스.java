@@ -38,18 +38,22 @@ public class 이상한체스 {
         VISITED = new boolean[N][M][4];
         BOARD[X1][Y1][1] = 0;
         operate();
+        System.out.println("-----------------");
 
         VISITED = new boolean[N][M][4];
         BOARD[X1][Y1][1] = 1;
         operate();
+        System.out.println("-----------------");
 
         VISITED = new boolean[N][M][4];
         BOARD[X1][Y1][1] = 2;
         operate();
+        System.out.println("-----------------");
 
         VISITED = new boolean[N][M][4];
         BOARD[X1][Y1][1] = 3;
         operate();
+        System.out.println("-----------------");
 
         System.out.println(ANS);
     }
@@ -63,13 +67,14 @@ public class 이상한체스 {
         simulate();
         ANS = Math.min(countMin(), ANS);
 
+        System.out.println(ANS);
         for(int i=0; i<N; i++)
             for(int j=0; j<M; j++)
                 BOARD[i][j][0] = temp[i][j][0];
 
-        for(int i=X1; i<N; i++)
-            for(int j=Y1+1; j<M; j++){
-                if(isTeam(i, j) && BOARD[i][j][1] < 3 && !VISITED[i][j][BOARD[i][j][1]]){
+        for(int i=0; i<N; i++)
+            for(int j=0; j<M; j++){
+                if(i!=X1 && j!=Y1 && isTeam(i, j) && BOARD[i][j][1] < 3 && !VISITED[i][j][BOARD[i][j][1]]){
                     BOARD[i][j][1] += 1;
                     VISITED[i][j][BOARD[i][j][1]] = true;
                     operate();
