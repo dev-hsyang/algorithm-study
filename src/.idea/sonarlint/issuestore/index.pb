@@ -1,8 +1,4 @@
 
-S
-#codetree/정육면체굴리기.java,8/a/8a557fe393c09a3f4725717bc78e314da8776de7
-S
-#codetree/방화벽설치하기.java,0/0/00bd91773244d5bc7ef041edcd84cab89ce42d5d
 P
  baekjoon/미세먼지안녕.java,d/2/d203b4d7a45ed22888d53fb5a0a24905aed77e50
 K
@@ -17,8 +13,6 @@ M
 baekjoon/청소년상어.java,0/5/0577df138d30a9166d5d93224a7d2a2647f516d3
 Y
 )codetree/외주수익최대화하기.java,5/0/504f0edb2f1775e8656e5ebc622e6759be1ce557
-J
-codetree/조삼모사.java,4/1/41291a0ee993260f734beeb94701832a2360e797
 G
 baekjoon/토마토.java,2/3/2318f8f1c088dfbb1dfee977bbd9c8a95086724b
 J
@@ -55,8 +49,6 @@ J
 baekjoon/숨바꼭질.java,0/5/05e2d5740352597b45d0573d3e6126445e9417b6
 M
 baekjoon/스타트링크.java,9/d/9da00321fbed94a470e325ac0c9a1f464df94715
-J
-codetree/보도블럭.java,e/e/ee168e540fd69821b102c0db848a0cdf427869b9
 D
 baekjoon/퇴사.java,3/6/36564043042767657fc44fc2ea8762881f8e44cb
 H
