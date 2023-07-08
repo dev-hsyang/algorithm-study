@@ -1,8 +1,4 @@
 
-S
-#codetree/정육면체굴리기.java,8/a/8a557fe393c09a3f4725717bc78e314da8776de7
-S
-#codetree/방화벽설치하기.java,0/0/00bd91773244d5bc7ef041edcd84cab89ce42d5d
 P
  baekjoon/미세먼지안녕.java,d/2/d203b4d7a45ed22888d53fb5a0a24905aed77e50
 K
@@ -17,14 +13,10 @@ M
 baekjoon/청소년상어.java,0/5/0577df138d30a9166d5d93224a7d2a2647f516d3
 Y
 )codetree/외주수익최대화하기.java,5/0/504f0edb2f1775e8656e5ebc622e6759be1ce557
-J
-codetree/조삼모사.java,4/1/41291a0ee993260f734beeb94701832a2360e797
 G
 baekjoon/토마토.java,2/3/2318f8f1c088dfbb1dfee977bbd9c8a95086724b
 J
 baekjoon/바이러스.java,9/9/9954a4b1f517abc9a16dc4d38044eecd3734be80
-M
-codetree/두개의사탕.java,c/f/cffb1638bac88db10aabf69d11f0db1dd374886a
 J
 codetree/나무박멸.java,1/8/189deb71db315865e11774ac98e22abb8badb6d2
 P
@@ -55,8 +47,6 @@ J
 baekjoon/숨바꼭질.java,0/5/05e2d5740352597b45d0573d3e6126445e9417b6
 M
 baekjoon/스타트링크.java,9/d/9da00321fbed94a470e325ac0c9a1f464df94715
-J
-codetree/보도블럭.java,e/e/ee168e540fd69821b102c0db848a0cdf427869b9
 D
 baekjoon/퇴사.java,3/6/36564043042767657fc44fc2ea8762881f8e44cb
 H
@@ -73,3 +63,25 @@ P
  baekjoon/주사위굴리기.java,e/e/eec77c559ec2c10c82c1d5ecf736693a15e2f5fa
 D
 baekjoon/빙산.java,6/5/65e9ae44b845c53425b36572da2e492f70b190f6
+J
+baekjoon/톱니바퀴.java,7/6/765eb4cd79840f263e709d0bfc4ad8aed0acfd0b
+G
+baekjoon/연구소.java,9/f/9f6d953f4b6d7e865eab7524b6241b2d1b55f2d7
+S
+#codetree/자율주행자동차.java,c/4/c494f259a4ff6a9c2d1246d47f77c124721ec17d
+G
+baekjoon/경사로.java,9/a/9ae18c8ef3ccc9a5baca172ad32458bc3fdef838
+S
+#baekjoon/연산자끼워넣기.java,1/7/1785adc9f8a5d2fe2197d7ab171440ea5de67fdb
+J
+codetree/조삼모사.java,4/1/41291a0ee993260f734beeb94701832a2360e797
+S
+#codetree/정육면체굴리기.java,8/a/8a557fe393c09a3f4725717bc78e314da8776de7
+S
+#codetree/방화벽설치하기.java,0/0/00bd91773244d5bc7ef041edcd84cab89ce42d5d
+M
+baekjoon/로봇청소기.java,2/5/257901e7d7229b934ddeb2febf33132c95b2d6ba
+\
+,baekjoon/맥주마시면서걸어가기.java,b/a/baade0c5edbb3b37d4cf6e538a630e934f2f0d2d
+M
+codetree/이상한체스.java,f/2/f24d2e79c6e6041cebb2a845038827acaf5f564e

@@ -1,0 +1,17 @@
+
+z	java:S135-"YReduce the total number of break and continue statements in this loop to use at most one.(Ú¡ëÀüÿÿÿÿ8¼Ò¾¾‘1
+z	java:S135F"YReduce the total number of break and continue statements in this loop to use at most one.(Ú¡ëÀüÿÿÿÿ8¼Ò¾¾‘1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª’Õ¬øÿÿÿÿ8¼Ò¾¾‘1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á„‰İÿÿÿÿÿ8ßÒ¾¾‘1
+n
+java:S3008"LRename this field "L" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á„‰İÿÿÿÿÿ8àÒ¾¾‘1
+p
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á„‰İÿÿÿÿÿ8àÒ¾¾‘1
+l
+java:S3008"ORename this field "ROAD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®·š¨8àÒ¾¾‘1
+s
+java:S3008"QRename this field "BLOCKS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šìáúÿÿÿÿ8àÒ¾¾‘1
+`
+java:S1659">Declare "L" and all following declarations on a separate line.(á„‰İÿÿÿÿÿ8áÒ¾¾‘1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(öë¤8ãÒ¾¾‘1
