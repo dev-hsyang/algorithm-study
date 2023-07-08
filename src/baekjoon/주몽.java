@@ -1,4 +1,4 @@
-package algorithm_coding._03_3_투포인터;
+package baekjoon;
 
 import java.util.Scanner;
 
