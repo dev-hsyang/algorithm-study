@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * 백준 1940
- * 실버 5
- */
+ * 실버 4
+ * */
 public class 주몽 {
 
     static int N, M, ANS;
