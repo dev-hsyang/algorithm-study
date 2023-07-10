@@ -21,8 +21,6 @@ J
 codetree/나무박멸.java,1/8/189deb71db315865e11774ac98e22abb8badb6d2
 P
  codetree/바이러스검사.java,1/9/1928c787fa50b8dbf7a5dfc9f28ca8b788688250
-t
-Dalgorithm_coding/_03_1_배열과리스트/숫자의합구하기.java,4/4/44e84b80b8555be4c2a6073c661cecd5feeb759d
 n
 >algorithm_coding/_03_1_배열과리스트/평균구하기.java,e/9/e9739c404ba8b6a4fc93be593426db45b0fa10ef
 h
@@ -47,8 +45,6 @@ J
 baekjoon/숨바꼭질.java,0/5/05e2d5740352597b45d0573d3e6126445e9417b6
 M
 baekjoon/스타트링크.java,9/d/9da00321fbed94a470e325ac0c9a1f464df94715
-D
-baekjoon/퇴사.java,3/6/36564043042767657fc44fc2ea8762881f8e44cb
 H
 baekjoon/_2048_Easy.java,b/3/b3dcfe5466309cafad869c41c3b1ca4e914a4770
 S
@@ -85,3 +81,7 @@ M
 ,baekjoon/맥주마시면서걸어가기.java,b/a/baade0c5edbb3b37d4cf6e538a630e934f2f0d2d
 M
 codetree/이상한체스.java,f/2/f24d2e79c6e6041cebb2a845038827acaf5f564e
+V
+&codetree/돌아가는팔각의자.java,b/1/b15a715af0875edcbf802f10f7364f9d51d4a614
+M
+codetree/두개의사탕.java,c/f/cffb1638bac88db10aabf69d11f0db1dd374886a

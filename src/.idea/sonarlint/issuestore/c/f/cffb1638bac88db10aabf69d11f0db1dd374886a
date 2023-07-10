@@ -1,0 +1,30 @@
+
+s	java:S135m"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(´¸Ë
+b
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ ¬ï
+b
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ ¬ï
+e
+java:S3008"PRename this field "COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÉ’
+h
+java:S3008"MRename this field "DX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¨Ÿ¶ıÿÿÿÿ
+h
+java:S3008"MRename this field "DY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜‰€ûÿÿÿÿÿ
+d
+java:S3008"NRename this field "MAP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Ï•ƒ
+d
+java:S3008"NRename this field "RED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Õğ¢
+e
+java:S3008"ORename this field "BLUE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Õğ¢
+5
+java:S1659"Declare "M" on a separate line.(ğ ¬ï
+8
+java:S1659""Declare "BLUE" on a separate line.(˜Õğ¢
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(âŞœ¢úÿÿÿÿ
+W
+java:S1126"AReplace this if-then-else statement by a single return statement.(ÑÏ¡è
+]
+java:S1126ˆ"AReplace this if-then-else statement by a single return statement.(î£ìœøÿÿÿÿ
+X
+java:S1126"AReplace this if-then-else statement by a single return statement.(Ğñø¡
