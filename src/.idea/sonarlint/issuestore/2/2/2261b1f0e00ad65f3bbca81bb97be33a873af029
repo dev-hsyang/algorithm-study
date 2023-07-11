@@ -1,20 +1,0 @@
-
-b	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­ÆÑ•
-b
-java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
-b
-java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
-d
-java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òéÃã
-d
-java:S3008"NRename this field "MAP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å³ª»
-T
-java:S1659">Declare "M" and all following declarations on a separate line.(òéÃã
-M
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(öë¤
-m
-java:S3776""RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÿÒŞ§ûÿÿÿÿ
-m
-java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ÒáéÚÿÿÿÿÿ
