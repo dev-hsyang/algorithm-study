@@ -41,8 +41,6 @@ t
 Dalgorithm_coding/_05_2_너비우선탐색/DFS와BFS프로그램.java,8/1/81bf5891d984b516086aef45e798419be45f5360
 J
 baekjoon/촌수계산.java,e/7/e7102a85d09561c3dfaa8f0c67b5f835a64b09d9
-J
-baekjoon/숨바꼭질.java,0/5/05e2d5740352597b45d0573d3e6126445e9417b6
 M
 baekjoon/스타트링크.java,9/d/9da00321fbed94a470e325ac0c9a1f464df94715
 H
