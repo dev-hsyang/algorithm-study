@@ -75,8 +75,6 @@ S
 #codetree/방화벽설치하기.java,0/0/00bd91773244d5bc7ef041edcd84cab89ce42d5d
 M
 baekjoon/로봇청소기.java,2/5/257901e7d7229b934ddeb2febf33132c95b2d6ba
-\
-,baekjoon/맥주마시면서걸어가기.java,b/a/baade0c5edbb3b37d4cf6e538a630e934f2f0d2d
 M
 codetree/이상한체스.java,f/2/f24d2e79c6e6041cebb2a845038827acaf5f564e
 V
