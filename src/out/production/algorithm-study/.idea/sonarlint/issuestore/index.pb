@@ -69,3 +69,13 @@ Z
 *baekjoon/그래프탐색/아기상어.java,8/0/807ac1560c1eec0014703dc521792f3e8abafb0e
 Z
 *baekjoon/그래프탐색/안전영역.java,9/4/9457cfa9a7585f1c4f29c1942c11e8db45a65f2e
+T
+$baekjoon/백트래킹/연구소.java,3/8/38fec70db1ea2fed99d45c8e4cd48efe0e9921ce
+`
+0baekjoon/백트래킹/연산자끼워넣기.java,6/6/662277bda287d334437626e51fcfd9f254920a4d
+T
+$baekjoon/브루트포스/주몽.java,9/4/94af691e5530c4cbee392d89927555302c20f672
+W
+'baekjoon/구현/주사위굴리기.java,d/1/d1db0a59eb908ade3bee8fb86be5b7682ef07aaa
+Z
+*baekjoon/백트래킹/청소년상어.java,0/5/05bc6bd5089934db5c2cad91f388b0e87eae6e39

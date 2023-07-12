@@ -1,0 +1,21 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Å„ğÚ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¥½®ıÿÿÿÿ8Í¼û¡”1
+g
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¶üÿÿÿÿ
+i
+java:S3008"NRename this field "MIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¶üÿÿÿÿ
+i
+java:S3008"NRename this field "MAX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¶üÿÿÿÿ
+j
+java:S3008"ORename this field "NUMS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òõĞûÿÿÿÿ
+h
+java:S3008"SRename this field "OPERATOR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚØ£b
+m
+java:S3008"RRename this field "ARRANGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‡ˆüÿÿÿÿ
+[
+java:S1659"@Declare "MIN" and all following declarations on a separate line.(¡¶üÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(¾şèt
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ŞÎÖæ
