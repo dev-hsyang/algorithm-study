@@ -1,27 +1,0 @@
-
-
-java:S1319P"dThe type of "time" should be an interface such as "List" rather than the implementation "ArrayList".(¿Õı«ÿÿÿÿÿ
-~
-java:S1319d"cThe type of "arr" should be an interface such as "List" rather than the implementation "ArrayList".(çıåôøÿÿÿÿ
-b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ùõæ®
-g
-java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ
-c
-java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñëìf
-b
-java:S3008"LRename this field "P" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÜÂÖ
-z
-java:S3008"XRename this field "NIGHT_VISITED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Š°„úÿÿÿÿ8Óó¿1
-h
-java:S3008"RRename this field "MORNING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÛ…‚
-k
-java:S3008"PRename this field "NIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ‚Äûÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(öë¤
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(–˜­Í
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(°¯ÿÁüÿÿÿÿ
-M	java:S106&"9Replace this use of System.out or System.err by a logger.(ê†“
-S	java:S106("9Replace this use of System.out or System.err by a logger.(°¯ÿÁüÿÿÿÿ
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
-V	java:S125+"<This block of commented-out lines of code should be removed.(ÿÄ•Üúÿÿÿÿ
-T
-java:S1155e">Use isEmpty() to check whether the collection is empty or not.(¬“À…

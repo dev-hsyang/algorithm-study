@@ -1,0 +1,25 @@
+
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ƒîûÿÿÿÿ
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂÁ†ï8´ú¡”1
+g
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷°åïûÿÿÿÿ
+i
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷°åïûÿÿÿÿ
+l
+java:S3008"QRename this field "HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷°åïûÿÿÿÿ
+k
+java:S3008"PRename this field "COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷°åïûÿÿÿÿ
+h
+java:S3008"MRename this field "DX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¨Ÿ¶ıÿÿÿÿ
+h
+java:S3008"MRename this field "DY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜‰€ûÿÿÿÿÿ
+d
+java:S3008"NRename this field "MAP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å³ª»
+h
+java:S3008"RRename this field "VISITED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÎ²Ğ
+[
+java:S1659"@Declare "ANS" and all following declarations on a separate line.(÷°åïûÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(öë¤
+E
+java:S1197,"*Move the array designators [] to the type.(Å©½úÿÿÿÿ

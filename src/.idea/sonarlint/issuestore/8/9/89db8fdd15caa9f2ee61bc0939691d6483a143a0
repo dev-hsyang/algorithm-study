@@ -1,0 +1,18 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Óê˜µüÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇØøïúÿÿÿÿ8Æ—ğ¡”1
+e
+java:S3008"ORename this field "NODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ıÓ¯
+e
+java:S3008"ORename this field "LINK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ıÓ¯
+d
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ıÓ¯
+m
+java:S3008"RRename this field "VISITED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã‹¦ùøÿÿÿÿ
+d
+java:S3008"NRename this field "ADJ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒò”û
+W
+java:S1659"ADeclare "LINK" and all following declarations on a separate line.(¼ıÓ¯
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(öë¤

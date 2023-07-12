@@ -1,16 +1,0 @@
-
-J
-java:S1066\"/Merge this if statement with the enclosing one.(ÉÄ……ÿÿÿÿÿ
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ïî“Ïøÿÿÿÿ
-i
-java:S3008"NRename this field "MAX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Âôåýÿÿÿÿ
-M
-java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ
-M	java:S106$"9Replace this use of System.out or System.err by a logger.(¾þèt
-h	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»õ±Šýÿÿÿÿ
-o
-java:S30122"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(›¹Òß
-t
-java:S3012L"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(°¿á‘ýÿÿÿÿ
-m
-java:S3776Q"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ßê¨Èùÿÿÿÿ
