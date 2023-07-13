@@ -79,3 +79,5 @@ W
 'baekjoon/구현/주사위굴리기.java,d/1/d1db0a59eb908ade3bee8fb86be5b7682ef07aaa
 Z
 *baekjoon/백트래킹/청소년상어.java,0/5/05bc6bd5089934db5c2cad91f388b0e87eae6e39
+Z
+*baekjoon/그래프탐색/촌수계산.java,c/1/c1a153ae49e36a8e8d93c7db4bb8a0ac93f5ff87
