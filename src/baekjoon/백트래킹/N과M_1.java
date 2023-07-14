@@ -2,7 +2,6 @@ package baekjoon.백트래킹;
 
 
 import java.util.Scanner;
-import java.util.Stack;
 
 /**
  * 백준 15649
