@@ -35,12 +35,11 @@ public class 패션왕신해빈 {
 					MAP.put(type, 1);
 			}
 			Iterator<String> iter = MAP.keySet().iterator();
-			while(iter.hasNext()) {
+			while(iter.hasNext())
 				ANS *= (MAP.get(iter.next()) + 1);
-			}
+		
 			ANS -= 1;
 			System.out.println(ANS);
 		}
 	}
-
 }
