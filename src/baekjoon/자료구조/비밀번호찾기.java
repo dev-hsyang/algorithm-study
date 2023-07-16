@@ -34,9 +34,7 @@ public class 비밀번호찾기 {
 			st = new StringTokenizer(br.readLine());
 			bw.append(HASHMAP.get(st.nextToken()) + "\n");
 		}
-		
 		bw.flush();
 		bw.close();
 	}
-
 }
