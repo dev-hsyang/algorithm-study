@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5d6a49c-f5c5-4114-9749-286f19d8a898" name="Changes" comment="" />
+    <list default="true" id="d5d6a49c-f5c5-4114-9749-286f19d8a898" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.효율적인해킹">
+  <component name="RunManager" selected="Application.오큰수구하기">
     <configuration name="싸이버개강총회" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.자료구조.싸이버개강총회" />
       <module name="algorithm-study" />
@@ -48,12 +50,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="동전0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.그리디.동전0" />
+      <module name="algorithm-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.그리디.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="토마토2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="baekjoon.그래프탐색.토마토2" />
       <module name="algorithm-study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="baekjoon.그래프탐색.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="숨바꼭질2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.그래프탐색.숨바꼭질2" />
+      <module name="algorithm-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.그래프탐색.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="오큰수구하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm_coding._03_5_스택과큐.오큰수구하기" />
+      <module name="algorithm-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm_coding._03_5_스택과큐.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,7 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.효율적인해킹" />
+        <item itemvalue="Application.오큰수구하기" />
+        <item itemvalue="Application.동전0" />
         <item itemvalue="Application.싸이버개강총회" />
         <item itemvalue="Application.토마토2" />
       </list>

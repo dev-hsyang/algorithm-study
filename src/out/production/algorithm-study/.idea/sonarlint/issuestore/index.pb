@@ -45,8 +45,6 @@ c
 3baekjoon/그래프탐색/단지번호붙이기.java,0/3/0323334457bfe8cba6fa3d1209d648cc16b2c760
 T
 $baekjoon/구현/로봇청소기.java,4/1/4100e603a22c1a5966910304bb2bf34bb327760c
-l
-<baekjoon/그래프탐색/맥주마시면서걸어가기.java,b/f/bf81d936a6757024387ea19ad2a552795f1b72e7
 W
 'baekjoon/구현/미세먼지안녕.java,c/1/c1be7b0956c143612af106621a5c014c233175a6
 Z
@@ -81,3 +79,7 @@ Z
 *baekjoon/백트래킹/청소년상어.java,0/5/05bc6bd5089934db5c2cad91f388b0e87eae6e39
 Z
 *baekjoon/그래프탐색/촌수계산.java,c/1/c1a153ae49e36a8e8d93c7db4bb8a0ac93f5ff87
+l
+<baekjoon/그래프탐색/맥주마시면서걸어가기.java,b/f/bf81d936a6757024387ea19ad2a552795f1b72e7
+R
+"baekjoon/백트래킹/N과M_1.java,2/8/288d06eafc99a585f48de7f7bb27eb033359eba9
