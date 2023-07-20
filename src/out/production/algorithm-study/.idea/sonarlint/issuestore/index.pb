@@ -27,8 +27,6 @@ h
 8algorithm_coding/_03_3_투포인터/주몽의명령.java,3/2/32d5951f8444aef18b6b35c24a66f30700e981b5
 z
 Jalgorithm_coding/_03_3_투포인터/연속된자연수의합구하기.java,e/e/ee0337cf7e57d656ea4288b9178d0240438bef6e
-k
-;algorithm_coding/_03_3_투포인터/좋은수구하기.java,8/f/8f62ba1e400d53d39558ec6d1e50b796cfa76e7f
 U
 %baekjoon/백트래킹/_2048_Easy.java,f/a/fa6f7ea5d9487c1ea694023d6ad3294ee8f304fe
 Z
