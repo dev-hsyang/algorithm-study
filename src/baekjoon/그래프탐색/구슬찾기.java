@@ -9,7 +9,6 @@ import java.util.Scanner;
  */
 public class 구슬찾기 {
 
-
     static int N, M, CNT, MIDVAL, ANS;
     static int[] LIGHT_COUNT, HEAVY_COUNT;
     static boolean[] VISITED;
