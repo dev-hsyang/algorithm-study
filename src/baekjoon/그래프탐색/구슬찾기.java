@@ -96,5 +96,4 @@ public class 구슬찾기 {
                 ANS += 1;
         }
     }
-
 }
