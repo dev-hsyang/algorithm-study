@@ -41,7 +41,6 @@ public class 숨바꼭질2 {
     public static void operate(){
         for(int i=1; i<N+1; i++){
             VISITED = new boolean[N+1];
-
         }
         bfs(1);
         findMaxDistance();
