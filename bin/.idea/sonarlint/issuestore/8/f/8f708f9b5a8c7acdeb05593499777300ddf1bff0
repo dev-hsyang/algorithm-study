@@ -1,0 +1,27 @@
+
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(´½œ‰ıÿÿÿÿ8¿Ä¥–1
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìµ¹ø8¿Ä¥–1
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ºÃÀ¥ùÿÿÿÿ8‘¿Ä¥–1
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª˜§Èşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ°‹Šüÿÿÿÿ
+p
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èÿàçøÿÿÿÿ8¤¿Ä¥–1
+n
+java:S3008"LRename this field "S" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú’Üóøÿÿÿÿ8¤¿Ä¥–1
+n
+java:S3008"LRename this field "E" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú’Üóøÿÿÿÿ8¤¿Ä¥–1
+n
+java:S3008"LRename this field "Q" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú’Üóøÿÿÿÿ8¥¿Ä¥–1
+w
+java:S3008"URename this field "ATTENDANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´½œ‰ıÿÿÿÿ8¥¿Ä¥–1
+l
+java:S3008"ORename this field "EXIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìµ¹ø8¥¿Ä¥–1
+u
+java:S3008"SRename this field "ATTENDED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÃÀ¥ùÿÿÿÿ8¥¿Ä¥–1
+`
+java:S1659">Declare "E" and all following declarations on a separate line.(ú’Üóøÿÿÿÿ8¥¿Ä¥–1
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(öë¤8©¿Ä¥–1

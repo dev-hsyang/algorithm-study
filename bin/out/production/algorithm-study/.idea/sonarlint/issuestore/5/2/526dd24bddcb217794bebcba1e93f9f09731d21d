@@ -1,0 +1,26 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(³ŞÃ•øÿÿÿÿ
+t
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(°†ÿşÿÿÿÿ
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹Ã×
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂÁ†ï
+g
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¼Çıÿÿÿÿ
+g
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¼Çıÿÿÿÿ
+i
+java:S3008"NRename this field "ANS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¼Çıÿÿÿÿ
+n
+java:S3008"SRename this field "DISTANCE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¼Çıÿÿÿÿ
+i
+java:S3008"NRename this field "CNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¼Çıÿÿÿÿ
+e
+java:S3008"ORename this field "DIST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åë—†
+m
+java:S3008"RRename this field "VISITED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã‹¦ùøÿÿÿÿ
+i
+java:S3008"NRename this field "ADJ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãòñîúÿÿÿÿ
+Y
+java:S1659">Declare "M" and all following declarations on a separate line.(¬¼Çıÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(±¾Ù¨ÿÿÿÿÿ

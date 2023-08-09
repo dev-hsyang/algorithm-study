@@ -27,8 +27,6 @@ h
 8algorithm_coding/_03_3_투포인터/주몽의명령.java,3/2/32d5951f8444aef18b6b35c24a66f30700e981b5
 z
 Jalgorithm_coding/_03_3_투포인터/연속된자연수의합구하기.java,e/e/ee0337cf7e57d656ea4288b9178d0240438bef6e
-k
-;algorithm_coding/_03_3_투포인터/좋은수구하기.java,8/f/8f62ba1e400d53d39558ec6d1e50b796cfa76e7f
 U
 %baekjoon/백트래킹/_2048_Easy.java,f/a/fa6f7ea5d9487c1ea694023d6ad3294ee8f304fe
 Z
@@ -45,8 +43,6 @@ c
 3baekjoon/그래프탐색/단지번호붙이기.java,0/3/0323334457bfe8cba6fa3d1209d648cc16b2c760
 T
 $baekjoon/구현/로봇청소기.java,4/1/4100e603a22c1a5966910304bb2bf34bb327760c
-l
-<baekjoon/그래프탐색/맥주마시면서걸어가기.java,b/f/bf81d936a6757024387ea19ad2a552795f1b72e7
 W
 'baekjoon/구현/미세먼지안녕.java,c/1/c1be7b0956c143612af106621a5c014c233175a6
 Z
@@ -81,3 +77,27 @@ Z
 *baekjoon/백트래킹/청소년상어.java,0/5/05bc6bd5089934db5c2cad91f388b0e87eae6e39
 Z
 *baekjoon/그래프탐색/촌수계산.java,c/1/c1a153ae49e36a8e8d93c7db4bb8a0ac93f5ff87
+l
+<baekjoon/그래프탐색/맥주마시면서걸어가기.java,b/f/bf81d936a6757024387ea19ad2a552795f1b72e7
+R
+"baekjoon/백트래킹/N과M_1.java,2/8/288d06eafc99a585f48de7f7bb27eb033359eba9
+X
+(baekjoon/그래프탐색/토마토2.java,0/0/00ba9728ed6f560d41f0ac934aa4a81515281f7e
+`
+0baekjoon/자료구조/싸이버개강총회.java,8/f/8f708f9b5a8c7acdeb05593499777300ddf1bff0
+`
+0baekjoon/그래프탐색/효율적인해킹.java,f/a/fa1c924444da00bb9c840ea6232fc6a843896e4d
+k
+;algorithm_coding/_03_3_투포인터/좋은수구하기.java,8/f/8f62ba1e400d53d39558ec6d1e50b796cfa76e7f
+Z
+*baekjoon/그래프탐색/구슬찾기.java,f/f/ffa0c24e0700c9c7dec3c474391a9bbd9e204b33
+O
+baekjoon/그리디/동전0.java,2/b/2b582e369a08589dcc9a6b332cf249f6e21585d3
+[
++baekjoon/그래프탐색/숨바꼭질2.java,5/2/526dd24bddcb217794bebcba1e93f9f09731d21d
+k
+;algorithm_coding/_03_5_스택과큐/오큰수구하기.java,8/8/88c3eba3cac4a891326c70bbc7a2d069271a43da
+e
+5algorithm_coding/_03_5_스택과큐/카드게임.java,8/9/8925cfb8123fd25ec5baf233932edacc49c5e30d
+Q
+!baekjoon/백트래킹/퇴사.java,a/0/a04e715dbb52b79db4a6fc5a52a37b60535d3c31
