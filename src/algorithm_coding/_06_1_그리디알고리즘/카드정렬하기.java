@@ -24,15 +24,12 @@ public class 카드정렬하기 {
 			PQ.add(sc.nextInt());
 		
 		while(PQ.size()>1) {
-			
 			int a = PQ.poll();
 			int b = PQ.poll();
 			int sum = a + b;
 			ANS += sum;
 			PQ.add(sum);
 		}
-		
 		System.out.println(ANS);
 	}
-
 }
