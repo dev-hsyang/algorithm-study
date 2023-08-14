@@ -21,13 +21,10 @@ public class 회의실배정 {
             TIMELINE[i][1] = sc.nextInt();
         }
 
-        Arrays.sort(TIMELINE, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                if(o1[1] == o2[1]) // 종료시간이 같을 때
-                    return o1[0] - o2[0];
-                return o1[1] - o2[1];
-            }
+        Arrays.sort(TIMELINE, (o1, o2) -> {
+            if(o1[1] == o2[1]) // 종료시간이 같을 때
+                return o1[0] - o2[0];
+            return o1[1] - o2[1];
         });
 
         int end = -1;
