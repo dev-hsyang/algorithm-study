@@ -23,7 +23,7 @@ public class 거의소수구하기 {
 
         for(long l : PRIMES){
             long temp = l;
-            while((double)l <= (double)B/(double)temp){
+            while((double)l <= (double)B/ (double)temp){
                 if((double)l >= (double)A / (double)temp)
                     ANS++;
                 temp *= l;
