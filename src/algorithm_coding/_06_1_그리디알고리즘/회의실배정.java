@@ -1,7 +1,6 @@
 package algorithm_coding._06_1_그리디알고리즘;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 /**
