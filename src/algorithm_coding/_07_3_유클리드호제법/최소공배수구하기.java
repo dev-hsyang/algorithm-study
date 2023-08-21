@@ -18,7 +18,7 @@ public class 최소공배수구하기 {
             A = sc.nextInt();
             B = sc.nextInt();
             // A 와 B 의 최소공배수는 A * B / A 와 B 의 최대공약수 로 구할수 있다.
-            int ans = A * B / gcd(A, B);
+            int ans = A * B / gcd(Math.max(A, B), Math.min(A, B));
             System.out.println(ans);
         }
     }
