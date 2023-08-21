@@ -36,4 +36,11 @@ public class 최소공배수구하기 {
 
         return b;
     }
+
+    public static int gcd_recursive(int a, int b){
+        if(b == 0)
+            return a;
+        else
+            return gcd_recursive(b, a % b);
+    }
 }
