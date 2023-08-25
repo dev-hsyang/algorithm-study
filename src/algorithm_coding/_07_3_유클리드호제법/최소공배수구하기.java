@@ -18,23 +18,23 @@ public class 최소공배수구하기 {
             A = sc.nextInt();
             B = sc.nextInt();
             // A 와 B 의 최소공배수는 A * B / A 와 B 의 최대공약수 로 구할수 있다.
-            int ans = A * B / gcd(Math.max(A, B), Math.min(A, B));
+            int ans = A * B / gcd_recursive(Math.max(A, B), Math.min(A, B));
             System.out.println(ans);
         }
     }
-    public static int gcd(int A, int B){
-        int a = A;
-        int b = B;
-
-        while (true){
-            int c = a % b;
-            if(c == 0)
-                break;
-            a = b;
-            b = c;
-        }
-        return b;
-    }
+//    public static int gcd(int A, int B){
+//        int a = A;
+//        int b = B;
+//
+//        while (true){
+//            int c = a % b;
+//            if(c == 0)
+//                break;
+//            a = b;
+//            b = c;
+//        }
+//        return b;
+//    }
 
     public static int gcd_recursive(int a, int b){
         if(b == 0)
