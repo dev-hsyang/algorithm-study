@@ -33,7 +33,6 @@ public class 최소공배수구하기 {
             a = b;
             b = c;
         }
-
         return b;
     }
 
