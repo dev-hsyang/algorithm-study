@@ -23,7 +23,6 @@ public class 최대공약수구하기 {
             bw.append("1");
         bw.flush();
         bw.close();
-
     }
 
     public static long gcd(long a, long b){
