@@ -39,7 +39,7 @@ public class 특정거리의도시찾기 {
             ADJ[A].add(B);
         }
 
-        bfs(new Pair(X, 0));
+        bfs(X);
 
         for(int i=1; i<N+1; i++)
             if(DIST[i] == K)
@@ -56,30 +56,20 @@ public class 특정거리의도시찾기 {
         bw.close();
     }
 
-    public static void bfs(Pair pair){
-        Queue<Pair> queue = new LinkedList<Pair>();
-        queue.add(pair);
-        VISITED[pair.node] = true;
+    public static void bfs(int node){
+        Queue<Integer> queue = new LinkedList<Integer>();
+        queue.add(node);
+        VISITED[node] = true;
 
         while (!queue.isEmpty()){
-            Pair now = queue.poll();
-            for(int n : ADJ[now.node]){
+            int now = queue.poll();
+            for(int n : ADJ[now]){
                 if(!VISITED[n]){
                     VISITED[n] = true;
-                    DIST[n] = now.depth + 1;
-                    queue.add(new Pair(n, now.depth+1));
+                    DIST[n] = DIST[now] + 1;
+                    queue.add(n);
                 }
             }
         }
     }
-}
-
-class Pair{
-
-    public Pair(int node, int depth){
-        this.node = node;
-        this.depth = depth;
-    }
-    int node;
-    int depth;
 }
