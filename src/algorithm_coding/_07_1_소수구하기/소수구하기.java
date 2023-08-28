@@ -29,8 +29,8 @@ public class 소수구하기 {
         for(int i=2; i<=N; i++)
             ARR[i] = i;
 
-        for(int i=2; i<=Math.sqrt(N); i++)
-            for(int j=i+i; j<=N; j+=i) // j 가 i 의 배수인 경우로만 최적화 해두면 O(N^2) 가 되지 않는다.
+        for(int i=2; i<=Math.sqrt(N); i++) // (1)
+            for(int j=i+i; j<=N; j+=i) // (2)
                 if(ARR[j] % i == 0)
                     ARR[j] = 0;
 
