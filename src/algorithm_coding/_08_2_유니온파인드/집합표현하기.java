@@ -6,6 +6,9 @@ import java.util.StringTokenizer;
 /**
  * 백준 1717
  * 골드 4
+ *
+ * 유니온 파인드 알고리즘 적용시, find() 메서드 작성할 때 주의하여야 한다.
+ * 경로 압축하는 과정을 재귀적으로 잘 사용할 것
  */
 public class 집합표현하기 {
 
