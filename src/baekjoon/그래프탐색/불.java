@@ -1,5 +1,9 @@
 package baekjoon.그래프탐색;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 /**
@@ -21,14 +25,16 @@ public class 불 {
     static ArrayList<int[]> FIRE = new ArrayList<int[]>();
     static ArrayList<John> JOHN = new ArrayList<John>();
 
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        R = sc.nextInt();
-        C = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        R = Integer.parseInt(st.nextToken());
+        C = Integer.parseInt(st.nextToken());
         MAZE = new String[R][C];
         VISITED = new boolean[R][C];
         for(int i=0; i<R; i++){
-            String[] s = sc.next().split("");
+            st = new StringTokenizer(br.readLine());
+            String[] s = st.nextToken().split("");
             for(int j=0; j<C; j++){
                 MAZE[i][j] = s[j];
                 if(MAZE[i][j].equals("F"))
