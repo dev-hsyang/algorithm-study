@@ -9,15 +9,11 @@ import java.util.Scanner;
 public class N과M_2 {
 
     static int N, M;
-    static int[] ARR;
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
         M = sc.nextInt();
-        ARR = new int[N+1];
-        for(int i=1; i<N+1; i++)
-            ARR[i] = i;
 
         dfs(1, 0, new int[M]);
 
