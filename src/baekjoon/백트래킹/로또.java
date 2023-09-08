@@ -14,7 +14,6 @@ public class 로또 {
     static int K;
     static int[] S;
     static boolean[] VISITED;
-    static Set<String> LINKED_HASH_SET;
     static BufferedWriter BW;
 
     public static void main(String[] args) throws IOException {
@@ -27,14 +26,9 @@ public class 로또 {
                 break;
             S = new int[K];
             VISITED = new boolean[K];
-            LINKED_HASH_SET = new LinkedHashSet<>();
             for(int i=0; i<K; i++)
                 S[i] = sc.nextInt();
             dfs(0, 0, new int[6]);
-
-            Iterator<String> iterator = LINKED_HASH_SET.iterator();
-            while(iterator.hasNext())
-                BW.append(iterator.next() + "\n");
 
             BW.append("\n");
         }
@@ -45,11 +39,9 @@ public class 로또 {
     public static void dfs(int depth, int idx, int[] arr) throws IOException {
 
         if(depth == 6){
-            String s = "";
-            Arrays.sort(arr);
             for(int i : arr)
-                s += String.valueOf(i) + " ";
-            LINKED_HASH_SET.add(s);
+                BW.append(i + " ");
+            BW.append("\n");
             return;
         }
 
