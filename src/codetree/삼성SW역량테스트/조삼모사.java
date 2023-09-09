@@ -24,6 +24,12 @@ public class 조삼모사 {
         System.out.println(ANS);
     }
 
+    /**
+     * 백트래킹을 통해 N 개의 작업 중 N/2 개의 작업 조합을 찾아낸다.
+     * @param depth
+     * @param num
+     * @param arr
+     */
     public static void dfs(int depth, int num, int[] arr){
         if(depth == N/2){
             ANS = Math.min(ANS, calculate(arr));
@@ -36,6 +42,16 @@ public class 조삼모사 {
         }
     }
 
+    /**
+     * 핵심 아이디어
+     * dfs 를 통해, N 개 중에서 N/2 개만큼의 조합을 뽑았다.
+     * 뽑은 조합은 아침(또는 저녁)에 하는 일의 조합을 의미, 즉 *** 특정 조합에서 뽑히지 않은 숫자는 반대 시간대에 하는 일을 뜻한다. ***
+     * 찾아낸 아침 작업 조합을 가지고 저녁 작업 조합을 찾아낼 수 있다.
+     *
+     * 아침작업, 점심작업을 통해 sum 값을 더해간다.
+     * @param arr
+     * @return
+     */
     public static int calculate(int[] arr){
         int morningSum = 0;
         int nightSum = 0;
