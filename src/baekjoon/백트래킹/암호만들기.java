@@ -1,6 +1,5 @@
 package baekjoon.백트래킹;
 
-import java.beans.Visibility;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -35,6 +34,14 @@ public class 암호만들기 {
         BW.close();
     }
 
+    /**
+     * 각 dfs 의 stack 마다 자음 갯수를 갖도록 한다.
+     * 끝까지 탐색이 완료되었을때, 탐색한 문자열에 최소 1개 모음, 최소 2개 자음이 있는 경우 BufferedWriter 에 문자열을 추가한다.
+     * @param depth
+     * @param idx
+     * @param consonant
+     * @throws IOException
+     */
     public static void dfs(int depth, int idx, int consonant) throws IOException {
         if(depth == L){
             String s = "";
