@@ -11,6 +11,13 @@ import java.util.StringTokenizer;
  * 백준 1941
  * 골드 3
  */
+
+/**
+ * 일반적인 dfs , bfs 활용한 backtracking 을 시도했으나 어려움을 겪었던 문제이다.
+ * 이 문제의 해법은 무작정 dfs, bfs 를 활용하여 delta 탐색을 하는 것이 아닌
+ * (1) 25명의 여학생중 7명을 뽑는 조합을 구하고 (25 C 7 을 backtracking 으로 구한다.)
+ * (2) 찾아낸 7명 조합이 이다솜파가 4명 이상인지, 근접한지 (여기서 bfs 나 dfs 를 활용하여 delta 탐색을 진행한다.) 확인하면 된다.
+ */
 public class 소문난칠공주 {
 
     public static int ANS;
@@ -39,6 +46,13 @@ public class 소문난칠공주 {
         System.out.println(ANS);
     }
 
+    /**
+     * 25명의 여학생 중 7명을 선택하는 조합을 dfs backtracking 으로 구한다.
+     * 7명 조합이고, 이다솜파가 적어도 4명 이상이며, 근접하면 ANS++
+     * @param depth
+     * @param idx
+     * @param cnt
+     */
     public static void findCombination(int depth, int idx, int cnt){
         if(depth == 7){
             if(cnt >= 4 && isAdjacent())
