@@ -9,12 +9,8 @@ import java.util.*;
 public class 병원거리최소화하기 {
 
     static int N, M, ANS;
-    static int[] DX = {0, 1, 0, -1};
-    static int[] DY = {1, 0, -1, 0};
     static int[][] CITY;
-    static int[][] CANDI_CITY;
     static boolean[] CHOSEN;
-    static boolean[][] VISITED;
     static ArrayList<int[]> HOSPITALS = new ArrayList<int[]>();
     static ArrayList<int[]> PERSON = new ArrayList<int[]>();
     static Set<boolean[]> COMBINATIONS = new HashSet<boolean[]>();
