@@ -27,6 +27,13 @@ public class 계란으로계란치기 {
         System.out.println(ANS);
     }
 
+    /**
+     * <<집은 계란이 깨져있을 경우, 다음 계란으로 넘어간다>> 요구사항을 구현하지 못하여 어려움을 겪었다.
+     * 현재 index 의 계란 즉, 현재 집은 계란이 깨져있을 경우 다음계란으로 다시 dfs 를 시작해야한다.
+     * 또한, 다음계란으로 dfs 를 하여 오른쪽 끝의 계란까지 끝냈으면 계란깨기가 끝난 상태이므로 dfs 후 return 해주어야 한다.
+     * @param index
+     * @param cracked
+     */
     public static void dfs(int index, int cracked){
         if(index == N)
             return;
