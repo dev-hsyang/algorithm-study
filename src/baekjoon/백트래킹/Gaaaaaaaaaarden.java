@@ -76,7 +76,7 @@ public class Gaaaaaaaaaarden {
             if(!VISITED[i]){
                 GREENS[depth] = new Gcord(CAN_SPREAD.get(i)[0], CAN_SPREAD.get(i)[1], 0, "G");
                 VISITED[i] = true;
-                spreadGreen(depth + 1, i + 1);
+                spreadGreen(depth + 1, i);
                 VISITED[i] = false;
             }
         }
@@ -92,7 +92,7 @@ public class Gaaaaaaaaaarden {
             if(!VISITED[i]){
                 REDS[depth] = new Gcord(CAN_SPREAD.get(i)[0], CAN_SPREAD.get(i)[1], 0,"R");
                 VISITED[i] = true;
-                spreadRed(depth + 1, i + 1);
+                spreadRed(depth + 1, i);
                 VISITED[i] = false;
             }
         }
