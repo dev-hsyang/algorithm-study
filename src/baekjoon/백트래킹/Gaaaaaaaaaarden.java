@@ -59,6 +59,13 @@ public class Gaaaaaaaaaarden {
         System.out.println(ANS);
     }
 
+    /**
+     * dfs 안에서 for 문의 범위를 잘 생각해야 한다.
+     * index 를 파라메터로 받고 i 의 범위를 고려하는 것이 중요.
+     * 시간초과를 해결하는데 결정적인 부분이었다.
+     * @param depth
+     * @param index
+     */
     public static void spreadGreen(int depth, int index){
         if(depth == G){
             spreadRed(0, 0);
