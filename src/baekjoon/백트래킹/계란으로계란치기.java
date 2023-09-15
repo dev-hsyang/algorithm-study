@@ -59,13 +59,4 @@ public class 계란으로계란치기 {
             }
         }
     }
-
-
-    public static int countCracked(){
-        int cnt = 0;
-        for(int i=0; i<N; i++)
-            if(HP[i] <= 0)
-                cnt++;
-        return cnt;
-    }
 }
