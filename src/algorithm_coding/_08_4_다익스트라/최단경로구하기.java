@@ -1,10 +1,7 @@
 package algorithm_coding._08_4_다익스트라;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 /**
  * 백준 1753
@@ -39,7 +36,7 @@ public class 최단경로구하기 {
             ADJ[u].add(new Node1753(v, w));
         }
 
-        dijkstra(START);
+        dijkstra(new Node1753(START, 0));
 
         for(int i =1; i<V+1; i++) {
             if (DIST[i] == Integer.MAX_VALUE)
@@ -52,33 +49,36 @@ public class 최단경로구하기 {
         bw.close();
     }
 
-    public static void dijkstra(int node){
-        Queue<Integer> queue = new LinkedList<>();
+    public static void dijkstra(Node1753 node){
+        PriorityQueue<Node1753> queue = new PriorityQueue<Node1753>(); // 탐색을 하는 노드를 기준으로 **가장 작은 값의 거리**를 우선적으로 찾아야 하기 때문에 우선순위큐를 사용해야한다.
+        DIST[node.node] = 0;
         queue.add(node);
-        DIST[node] = 0;
-
-        while (!queue.isEmpty()){
-            int now = queue.poll();
-
-            if(VISITED[now])
+        while(!queue.isEmpty()){
+            Node1753 now = queue.poll();
+            if(VISITED[now.node])
                 continue;
-
-            VISITED[now] = true;
-            for(Node1753 n : ADJ[now]){
-                if(DIST[n.node] > DIST[now] + n.weight){
-                    DIST[n.node] = DIST[now] + n.weight;
-                    queue.add(n.node);
+            VISITED[now.node] = true;
+            for(int i=0; i<ADJ[now.node].size(); i++){
+                Node1753 next = ADJ[now.node].get(i);
+                if(DIST[next.node] > DIST[now.node] + next.weight){
+                    DIST[next.node] = DIST[now.node] + next.weight;
+                    queue.add(new Node1753(next.node, DIST[next.node])); // 큐에 삽입할때 최신화된 DIST 정보를 담아서 삽입해야한다.
                 }
             }
         }
     }
 }
 
-class Node1753{
+class Node1753 implements Comparable<Node1753>{
 
     public Node1753(int node, int weight){
         this.node = node;
         this.weight = weight;
     }
     int node, weight;
+
+    @Override
+    public int compareTo(Node1753 o) {
+        return this.weight > o.weight ? 1 : -1; // 새로 큐에 삽입되는 값보다 기존 큐의 값이 더 크면 그 순서 그대로. 반대 경우 기존큐 값이랑 새로운 값이랑 교체.
+    }
 }
