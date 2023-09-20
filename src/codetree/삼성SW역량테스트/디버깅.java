@@ -42,7 +42,7 @@ public class 디버깅 {
  			ANS = Math.min(ANS, depth);
  		
  		for(int i=x; i<H+1; i++) {
- 			for(int j=y; j<N+1; j++) {
+ 			for(int j=1; j<N+1; j++) {
  				if(NET[i][j])
  					continue;
  				if(canDeploy(i, j)) {
@@ -82,7 +82,6 @@ public class 디버깅 {
  						break;
  			}
  		}
- 		System.out.println("YESY");
  		SUCCESS = true;
  		return true;
  	}
