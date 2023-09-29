@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * 삼성 SW 역량테스트 2019 상반기 오전 1번 문제
+ * 골드 4
  * @author didgs
  *
  */

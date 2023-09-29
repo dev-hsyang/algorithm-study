@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 
 /**
  * 삼성 SW 역량테스트 2018 하반기 오후 2번 문제
+ * 골드 3
  */
 public class 전투로봇 {
 

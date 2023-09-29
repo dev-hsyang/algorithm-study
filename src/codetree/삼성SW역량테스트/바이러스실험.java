@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 
 /**
  * 삼성 SW역량테스트 2018 하반기 오후 1번 문제
+ * 골드 3
  * @author didgs
  *
  */
