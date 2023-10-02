@@ -17,7 +17,6 @@ public class 종전 {
     static int[] DY = {1, -1, -1, 1};
     static int[] POPULATION;
     static int[][] MAP;
-    static int[][] DIVIDED;
     static boolean[][] BORDER;
 
     public static void main(String[] args) throws IOException {
