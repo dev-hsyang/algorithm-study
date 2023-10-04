@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /**
- * 삼성 SW 역량테스트 하반기 오후 1번 문제
+ * 삼성 SW 역량테스트 2019 하반기 오후 1번 문제
  * 골드 3
  * @author didgs
  *
