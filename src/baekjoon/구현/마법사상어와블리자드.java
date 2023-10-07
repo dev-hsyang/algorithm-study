@@ -70,7 +70,6 @@ public class 마법사상어와블리자드 {
 
     public static void move(){
         int cntZero = 0;
-        boolean moved = false;
         for(int i=INDEX.length - 1; i>=0; i--){
             if(INDEX[i].num != 0){
                 if(cntZero != 0){
