@@ -67,11 +67,9 @@ public class 미로타워디펜스 {
 
     public static void move(){
         int cntZero = 0;
-        boolean moved = false;
         for(int i=INDEX.length - 1; i>=0; i--){
             if(INDEX[i].num != 0){
                 if(cntZero != 0){
-                    moved = true;
                     INDEX[i + cntZero].num = INDEX[i].num;
                     INDEX[i].num = 0;
                     MAP[INDEX[i + cntZero].x][INDEX[i + cntZero].y] = INDEX[i + cntZero].num;
