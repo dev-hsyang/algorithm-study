@@ -103,7 +103,6 @@ public class 미로타워디펜스 {
                     cnt = 1;
                 }
             }
-
             if(erased)
                 move();
         }
