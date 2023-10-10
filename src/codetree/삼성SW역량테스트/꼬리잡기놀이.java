@@ -111,22 +111,6 @@ public class 꼬리잡기놀이 {
         for(int i=1; i<N+1; i++)
             for(int j=1; j<N+1; j++)
                 MAP[i][j] = candi[i][j];
-//
-//        for(int i=1; i<N+1; i++){
-//            for(int j=1; j<N+1; j++)
-//                System.out.print(MAP[i][j] + " ");
-//            System.out.println(" ");
-//        }
-//
-//        System.out.println(" ");
-//
-//        for(int i=1; i<N+1; i++){
-//            for(int j=1; j<N+1; j++)
-//                System.out.print(IS_PLAYER[i][j] + " ");
-//            System.out.println(" ");
-//        }
-//
-//        System.out.println(" ");
     }
 
     public static void throwBall(){
