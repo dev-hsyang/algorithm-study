@@ -60,14 +60,12 @@ public class 꼬리잡기놀이 {
         for(int i=0; i<TEAMS.length; i++){ // i 번째 팀에 대해 이동
             int x = TEAMS[i].get(0).x;
             int y = TEAMS[i].get(0).y;
-            int tailnum = 0;
             boolean isCircle = false;
             for(int k=0; k<4; k++){
                 int nx = x + DX[k];
                 int ny = y + DY[k];
                 if(canGo(nx, ny) && (MAP[nx][ny] != 2 && MAP[nx][ny] != 0)){ // 다음으로 이동할 칸인데
                     if(IS_PLAYER[nx][ny]){ // 다음칸이 이미 꼬리일 경우
-                        tailnum = MAP[nx][ny];
                         isCircle = true;
                         TEAMS[i].get(0).x = nx;
                         TEAMS[i].get(0).y = ny;
