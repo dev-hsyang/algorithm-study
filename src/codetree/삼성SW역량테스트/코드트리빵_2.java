@@ -80,7 +80,6 @@ public class 코드트리빵_2 {
 			// 각 사람이 원하는 편의점 좌표를 중심으로 DISTMAP과 MINDIST 를 계산하고, 그 사람이 위치한 좌표에서 delta 탐색을 통해 MINDIST 에 해당하는 칸으로 이동. 우선순위는 delta 탐색 순서로 조정한다.
 			initDistmap(STOREINFO[i].x, STOREINFO[i].y);
 			int minDist = Integer.MAX_VALUE;
-			
 			for(int k=0; k<4; k++) {
 				int nx = PLAYERS[i].x + DX[k];
 				int ny = PLAYERS[i].y + DY[k];
@@ -107,8 +106,7 @@ public class 코드트리빵_2 {
 		// 격자의 사람들이 모두 이동한 뒤에 이동불가해진 칸을 업데이트해준다.
 		for(int i=1; i<=N; i++)
 			for(int j=1; j<=N; j++)
-				ROAD[i][j] = candi[i][j];
-		
+				ROAD[i][j] = candi[i][j];	
 	}
 	
 	public static void moveToBasecamp(int time) {
@@ -167,7 +165,6 @@ public class 코드트리빵_2 {
 	public static boolean canGo(int x, int y) {
 		return x>=1 && x<=N && y>=1 && y<=N;
 	}
-
 }
 
 class Pair2022{
