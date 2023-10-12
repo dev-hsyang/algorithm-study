@@ -104,6 +104,7 @@ public class 메이즈러너 {
 						continue;
 					for(int idx = 1; idx<=M; idx++) {
 						Runner2023 r = RUNNERS[idx];
+						// Runner 가 해당 정사각형 범위 내에 있고, 아직 탈출하지 않았는지 확인
 						if(!r.escape && r.x >= x1 && r.x <= x2 && r.y >= y1 && r.y <= y2) {
 							SQUARE_PAIR[0] = i;
 							SQUARE_PAIR[1] = j;
