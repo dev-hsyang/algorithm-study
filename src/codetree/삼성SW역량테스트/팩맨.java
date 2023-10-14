@@ -1,6 +1,5 @@
 package codetree.삼성SW역량테스트;
 
-import java.beans.Visibility;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -18,7 +17,9 @@ public class 팩맨 {
     static int[] MDX = {0, -1, -1, 0, 1, 1, 1, 0, -1};
     static int[] MDY = {0, 0, -1, -1, -1, 0, 1, 1, 1};
     static int[] CANDI = new int[3];
+    static int[] CANDI2 = new int[3];
     static int[][] BOARD = new int[5][5];
+    static boolean FOUND;
     static Packman2021 PACKMAN;
     static Queue<Monster2021> EGGS = new LinkedList<>();
     static ArrayList<Monster2021> MONSTERS = new ArrayList<>();
@@ -66,16 +67,15 @@ public class 팩맨 {
                     m.d = 1;
             }
         }
-
-        int[][] temp = new int[5][5];
-        for(Monster2021 m : MONSTERS)
-            temp[m.x][m.y] += 1;
     }
 
     public static void packMoves(){
+        FOUND = false;
         PACK_MAX = 0;
         CANDI = new int[3];
         dfs(0, new int[3]);
+        if(PACK_MAX == 0)
+            CANDI = CANDI2;
 
         Monster2021[] candi = new Monster2021[MONSTERS.size()];
         for(int i=0; i<MONSTERS.size(); i++)
@@ -141,6 +141,10 @@ public class 팩맨 {
             x = nx;
             y = ny;
         }
+        if(!FOUND)
+            for(int k=0; k<3; k++)
+                CANDI2[k] = dir[k];
+        FOUND = true;
         if(cnt > PACK_MAX){
             PACK_MAX = cnt;
             for(int i=0; i<3; i++)
