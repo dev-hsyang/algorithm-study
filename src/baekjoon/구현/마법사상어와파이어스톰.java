@@ -1,4 +1,4 @@
-package codetree.삼성SW역량테스트;
+package baekjoon.구현;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * @author didgs
  *
  */
-public class 회전하는빙하 {
+public class 마법사상어와파이어스톰 {
 
 	static int N, Q, LEN, MAX_PART, SUM;
 	static int[] DX = {0, 1, 0, -1};
@@ -71,10 +71,8 @@ public class 회전하는빙하 {
 	
 	public static void rotatePivots(int level) {
 		int bias = (int)Math.pow(2, level);
-		int slice = (int)Math.pow(2, level - 1);
 		int[][] temp = new int[bias][bias];
 		int[][] candi = new int[bias][bias];
-		int[][] sliced = new int[slice][slice];
 		for(int[] pair : PIVOTS) {
 			int px = pair[0];
 			int py = pair[1];
@@ -82,20 +80,9 @@ public class 회전하는빙하 {
 				for(int j=0; j<bias; j++)
 					temp[i][j] = ICE[px + i][py + j];
 			
-			VISITED = new boolean[bias][bias];
-			for(int i=0; i<bias - slice + 1; i += slice)
-				for(int j=0; j<bias - slice + 1; j += slice) 				
-					for(int k=i; k<i + slice; k++) 
-						for(int l=j; l<j + slice; l++) 
-							for(int d=0; d<4; d++) {
-								int nx = k + slice * DX[d];
-								int ny = l + slice * DY[d];
-								if(nx >= 0 && nx < bias && ny >=0 && ny < bias && !VISITED[nx][ny]) {
-									candi[nx][ny] = temp[k][l];
-									VISITED[nx][ny] = true;
-									break;
-								}
-							}
+			for(int i=0; i<bias; i++)
+				for(int j=0; j<bias; j++)
+					candi[i][j] = temp[bias - j - 1][i];
 						
 			for(int i=0; i<bias; i++)
 				for(int j=0; j<bias; j++)
