@@ -161,8 +161,6 @@ public class 회전하는빙하 {
 					SUM += ICE[i][j];
 	}
 	
-	
-	
 	public static boolean isInbound(int x, int y) {
 		return x>=0 && x<LEN && y>=0 && y<LEN;
 	}
@@ -171,5 +169,4 @@ public class 회전하는빙하 {
 		System.out.println(SUM);
 		System.out.println(MAX_PART);
 	}
-
 }
