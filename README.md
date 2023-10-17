@@ -9,3 +9,6 @@
 
 # swea
 SWEA(Software Expert Academy)에서 풀이한 문제들을 모은 패키지입니다.
+
+# softeer
+Softeer.ai(현대자동차 그룹)에서 풀이한 문제들을 모은 패키지입니다.
